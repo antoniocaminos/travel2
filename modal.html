@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias de Instagram</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+</head>
+<body>
+    <!-- Aquí se mostrarán las historias de Instagram -->
+    <div id="instafeed"></div>
+
+    <script>
+        // Configuración de instafeed
+        var feed = new Instafeed({
+            accessToken: 'TU_ACCESS_TOKEN_DE_INSTAGRAM', // Reemplaza con tu access token de Instagram
+            get: 'userStories', // Obtiene las historias de usuario
+            userId: 'TU_ID_DE_USUARIO_DE_INSTAGRAM', // Reemplaza con tu ID de usuario de Instagram
+            template: '<img src="{{image}}" alt="{{caption}}">'
+        });
+        
+        // Ejecutar instafeed
+        feed.run();
+    </script>
+</body>
+</html>

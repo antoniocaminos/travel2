@@ -1,0 +1,456 @@
+
+/* Reset general */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Icon styles */
+.icon {
+    border-radius: 50%;
+}
+
+/* Text alignment */
+.text-center,
+.main-title,
+.texto-centrado {
+    text-align: center;
+}
+
+.texto-centrado {
+    padding-bottom: 20px;
+    align-content: center;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px; /* Adjust the padding as needed */
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    width: 170px; /* Adjust the size of the logo */
+    margin-right: 20px; /* Add some space between the logo and the nav items */
+    border-radius: 50%;
+}
+.marca-ellas{
+    width: 170px; /* Adjust the size of the logo */
+    margin-right: 20px; /* Add some space between the logo and the nav items */
+    border-radius: 50%;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Align the nav items to the right */
+}
+
+.nav-item {
+    margin-left: 30px; /* Space between each nav item */
+}
+
+.nav-item h3 {
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.nav-link h3 {
+    font-size: 18px; /* Adjust font size */
+    margin: 0;
+}
+
+.navbar-toggler {
+    margin-left: auto; /* Align the toggler button to the right */
+}
+.container{
+    margin-bottom: 100px;
+}
+/* Responsive adjustments for navbar */
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin-left: 0;
+    }
+
+    .navbar-toggler {
+        background-color: rgb(124, 26, 91);
+        margin-right: 20px; /* Adjust as needed for alignment on small screens */
+    }
+
+    /* Hide navbar on small screens */
+    .navBar {
+        display: none;
+    }
+}
+
+/* WhatsApp sticky button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+    text-decoration: none;
+    box-shadow: none;
+    z-index: 9999; /* Ensure the button is above other elements */
+    transition: opacity 0.3s ease; /* Add an opacity transition */
+}
+
+.whatsapp:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+.card{
+    margin-top: 60px;
+   
+    
+}
+/* Card hover effects */
+.card-img-top,
+.especiales img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.card-img-top:hover,
+.especiales img:hover {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+.especiales {
+    padding-bottom: 20px;
+}
+
+/* Footer styles */
+.footer,
+.footer-ellas {
+    background-color: #333; /* Default footer background */
+    color: #fff; /* Footer text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-ellas {
+    background-color: rgb(160, 32, 117); /* Custom footer background */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    gap: 90px;
+}
+
+.footer-left,
+.footer-right {
+    width: 48%;
+}
+
+.footer-right {
+    text-align: left;
+}
+
+.footer-left h6,
+.footer-right h6 {
+    margin: 5px 0;
+}
+
+.copyright,
+.developed-by {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.developed-by {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+    }
+}
+
+/* Social media styles */
+.social {
+    margin-top: 20px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 24px; /* Increase icon size */
+}
+
+.social-media a:hover {
+    color: #ddd;
+}
+
+/* Import Font Awesome for social media icons */
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); */
+
+/* Contact section styles */
+.contact-section .card,
+.contact-section .contact-form {
+    height: 100%;
+    align-items: center;
+}
+
+.contact-section .contact-form .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-section .contact-form form {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Remove bottom margin */
+}
+.navbar-custom-ellas{
+    background-color: rgb(160, 32, 117); /* Custom footer background */
+
+}
+.ellasH2{
+    color: #fff;
+}
+.grid-img {
+    width: 100%;
+    height: auto;
+}
+.grid-item {
+    padding: 5px;
+}
+/* grid de productos start */
+.contacto-productos{
+    margin-left: 30px;
+    margin-right: 30px;
+} 
+.container-productos{
+    padding: 30px;
+    margin: 30px;
+}
+/* Grid de imágenes */
+/* Estilos para el grid de imágenes */
+.container-productos {
+    padding: 20px;
+}
+
+.grid-item {
+    padding: 10px;
+    position: relative;
+}
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 15px; /* Borde redondeado */
+    object-fit: cover; /* Para mantener proporciones y recortar */
+}
+
+/* Estilos específicos para las imágenes del grid */
+.img-large {
+    height: 100%; /* Altura completa para ocupar dos filas */
+}
+
+.img-small {
+    height: 50%; /* Altura para ocupar media fila */
+}
+
+.img-horizontal {
+    height: 50%; /* Misma altura que las imágenes pequeñas */
+}
+
+/* Layout responsivo usando flexbox */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-6,
+.col-md-6,
+.col-sm-12,
+.col-6,
+.col-12 {
+    box-sizing: border-box;
+}
+
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-md-6,
+.col-md-12 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Ajustes para centrar y asegurar que la imagen vertical ocupe exactamente dos filas */
+.col-lg-6.col-md-12.col-sm-12.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-large {
+    height: calc(100% - 20px); /* Ajustar para ocupar el espacio correctamente */
+}
+
+.col-6.grid-item {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .img-large {
+        height: calc(100vh - 40px); /* Altura ajustada para dispositivos más grandes */
+    }
+
+    .img-small, .img-horizontal {
+        height: calc(50vh - 20px); /* Ajustar para dispositivos más grandes */
+    }
+}
+
+/* grid de productos ends */
+/* carusel de testimonios */
+.carousel-container {
+    position: relative;
+}
+
+.instagram-texto {
+    position: absolute;
+    bottom: 20px; /* Ajusta esta propiedad según tu preferencia */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%);
+}
+/* carusel de testimonios ends */
+
+/* modal start */
+/* Estilos para el contenedor y el enlace */
+#formas-de-pago-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#formas-de-pago-link {
+    font-size: 20px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.payment-logo {
+    width: 100px;
+    margin: 10px;
+}
+
+/* modal ends */
