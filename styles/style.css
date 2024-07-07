@@ -452,5 +452,10 @@
     width: 100px;
     margin: 10px;
 }
-
+a{
+    text-decoration: none;
+}
+#formas-de-pago-link {
+    text-decoration: none;
+}
 /* modal ends */

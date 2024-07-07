@@ -14,6 +14,31 @@ $(document).ready(function() {
     });
 });
 ///////////////////buttons/////////////////////////
+function mostrarPago() {
+    Swal.fire({
+        title: "Formas de pago",
+        html: `
+        <p>Aceptamos todos los medios de pago: Efectivo, depósito, transferencia y Tarjeta de crédito. Este último  tendrá un recargo y su porcentaje varía, dependiendo el tipo de tarjeta con que se efectúe el pago</p>
+        <p><strong>PAGOS CON TARJETA</strong></p>
+        <img src="./Image/visaMasterLogo.png" alt="tarjtas"><img src="./Image/naranja.png" alt="nx">
+        <br>
+        Financiación:  Tarjeta Naranja, Visa, Master (Bancarizadas):
+        <br>
+        <ul>
+            <li>Un solo pago: 10%</li>
+            <li>3 cuotas: 35%</li>
+            <li>6 cuotas: 50%</li>
+        </ul>
+        <p>Link de pago de mercado pago: 10%</p>
+        <img src="./Image/logo-mercadopago.jpg" alt="mercado">`,
+        icon: "$"
+    });
+}
+
+document.getElementById('formas-de-pago-link').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    mostrarPago();
+});
 // Función para mostrar el mensaje SweetAlert con mensaje específico por destino
 function mostrarMensaje(cardTitle) {
     let mensaje = '';
@@ -43,22 +68,112 @@ function mostrarMensaje(cardTitle) {
             ¿Te vas a Perder este destino Increíble? ¡Consultá y reservá ahora!`;
             break;
         case 'Merlo':
-            mensaje = 'Merlo es conocido por su microclima, ideal para el descanso y el turismo de naturaleza. Ubicado en la provincia de San Luis, Argentina, ofrece paisajes montañosos y una amplia oferta de actividades al aire libre.';
+            mensaje = `Villa de Merlo se encuentra situada en  la provincia de San Luis, a los pies de las sierras. Siendo reconocida mundialmente por su benigno microclima y sus hermosos paisajes y entornos naturales.
+            Villa de Merlo ofrece un abanico de actividades y paseos, entre ellos Trekking, Avistaje de aves, Actividades de montaña y variadas actividades de turismo aventura.
+            Nosotros te ofrecemos:
+            TRASLADO EN BUS MIX
+            ALOJAMIENTO 
+            REGIMEN DE COMIDA: PENSIÓN COMPLETA
+            COORDINACION PERMANENTE 
+            ASISTENCIA MÉDICA.
+            OPCIONAL
+            EXCURSIONES A CARGO DE CADA PASAJERO
+
+            Te invitamos a sumarte con nosotros a un viaje a puro relax y descanso.
+            ¡Consultá próximas salidas y Reservá ahora!`;
             break;
         case 'Mendoza':
-            mensaje = 'Mendoza es famosa por sus viñedos y la producción de vino, además de tener paisajes montañosos impresionantes. Es una provincia argentina ubicada en la región de Cuyo, conocida también por el Cerro Aconcagua, la montaña más alta de América del Sur.';
+                        mensaje = `
+            SAN RAFAEL + FULL DAY LAS LEÑAS
+            San Rafael se encuentra al sur de la provincia de Mendoza, a 200km de La Leñas.
+            Es por eso que decidimos fusionar estos dos destinos para ofrecerte una experiencia única. 
+            San Rafael nos ofrece bodegas, chocolaterías y variadas actividades recreativas para realizar, por otro lado Las Leñas con sus imponentes cerros nevados nos invitan a disfrutar de un paseo diferente, con actividades de turismo aventura para practicar .
+            Nosotros te ofrecemos:
+            SALIDA EN BUS MIX DESDE CORDOBA
+            ALOJAMIENTO
+            REGIMEN DE COMIDA: MEDIA PENSION 
+            COORDINACION PERMANENTE 
+            ASISTENCIA MÉDICA.
+            Entre las actividades podrás:
+            <li>REALIZAR UNA DEGUSTACIÓN DE VINOS EN BODEGA LASBIANO</li>
+            <li>CONOCER LA CHOCOLATERA (KETOBAC) Y ACEITERA</li>
+            <li>VISITAR EL LABERINTO DE BORGES.</li>
+            OPCIONAL
+            ACTIVIDADES DE TURISMO AVENTURA O EXTREMOS
+            ALQUILER DE TRAJES PARA ESQUIAR
+
+            ¡Sumate con nosotros a conocer estos dos destinos increíbles!
+            Consultá Proximas salidas y Reservá ahora.`;
             break;
         case 'Puerto Madryn':
-            mensaje = 'Puerto Madryn es un destino privilegiado para el avistaje de ballenas y la fauna marina. Situado en la provincia de Chubut, Argentina, ofrece la oportunidad de observar de cerca a estos majestuosos mamíferos marinos y disfrutar de sus playas.';
+            mensaje = `Situada en la provincia de Chubut, allí encontraremos Ballenas, pingüinos, elefantes y lobos marinos, que conforman el atractivo convocante de Península Valdés.¡No podes perderte esta experiencia inolvidable!
+            ¿Qué te ofrecemos?
+            SALIDA 3 Y 24 DE OCTUBRE
+            INCLUYE 
+            Bus Mix desde Córdoba 
+            3 noches de alojamiento en“Hotel Petit” 
+            Media pensión 
+            Coordinación Permanente 
+            Seguro médico 
+            EXCURSIONES INCLUÍDAS 
+            City tour: Puerto Madryn 
+            Traslado a Puerto Pirámides 
+            Visita a Las Grutas 
+            EXCURSIONES OPCIONALES 
+            <li>Pinguinera en Punta Tombo</li> 
+            <li>Avistaje de Lobos Marinos en Punta Loma</li> 
+            <li>Avistaje de Ballena en playa “El Doradillo”</li> 
+            <li>Navegación en Puerto Pirámides</li>`;
             break;
         case 'Termas de la Federación':
-            mensaje = 'Las Termas de la Federación ofrecen aguas termales con propiedades curativas y un entorno natural relajante. Se encuentran en la provincia de Entre Ríos, Argentina, y son ideales para el descanso y el bienestar.';
+            mensaje = `TERMAS DE FEDERACIÓN | TERMAS DE CHAJARÍ | TERMAS DE AYUÍ
+            ¿Ya conocías estos destinos? Todas ellas se encuentran en la provincia de Entre Ríos, y cuentan con maravillosos parques de aguas termales. 
+            Punto Travel te lleva a conocerlos. Los mismos se caracterizan por su entorno natural, tranquilidad y modernos servicios turísticos.
+            Todos ellos cuentan con un parque acuático ideal para los mas pequeños y para disfrutar en familia.
+            Es una buena opción para realizar tanto actividades recreativas como de descanso, relax y terapéuticas. 
+            Nosotros te ofrecemos:
+            TRASLADO EN BUS MIX DESDE CORDOBA Y CARLOS PAZ
+            ALOJAMIENTO
+            REGIMEN DE COMIDA: MEDIA PENSIÓN
+            COORDINACION PERMANENTE
+            ASISTENCIA MÉDICA.
+            Excursiones:
+            <li>TERMAS DE AYUÍ</li>
+            <li>TERMAS DE CONCORDIA</li>
+            <li>REPRESA SALTO GRANDE</li>
+            ❌NO INLUYE TICKET DE ACCESO A LOS PARQUES❌
+            ¡Consultá nuestras próximas salidas y Reservá ahora!`;
             break;
         case 'Termas de Rio Hondo':
-            mensaje = 'Las Termas de Río Hondo son conocidas por sus aguas termales y por ser un centro turístico y de salud. Ubicadas en la provincia de Santiago del Estero, Argentina, ofrecen tratamientos termales y diversas actividades recreativas.';
+            mensaje = `
+            Se encuentran ubicadas en la provincia de Santiago del Estero, sede de grandes eventos deportivos.
+            Este destino tiene diversas actividades para realizar, entre ellas el Dique Frontal y El museo del Automovil, entre otras.
+            La ciudad es conocida por sus aguas termales, que son reconocidas por sus propiedades curativas, Es ideal para aquellos que buscan disfrutar de las bondades curativas del agua termal, recrearse y relajarse.
+            Nosotros te ofrecemos:
+            Bus Mix desde Cordoba
+            Alojamiento
+            Coordinación permanente
+            Pensión completa
+            Full day en Santiago del Estero
+            ¡Viví este destino Imperdible!
+            ¡Consultá Proximas salidas y Reservá ahora!
+            `;
             break;
         case 'Salta':
-            mensaje = 'Salta, conocida como "La Linda", ofrece paisajes naturales impresionantes y una rica cultura folclórica. Situada en el noroeste argentino, es famosa por sus valles, quebradas, y la belleza de sus paisajes.';
+            mensaje = `
+            El norte argentino es una región maravillosa del país para viajar y conocer.
+            Punto Travel te lleva a conocer Salta y Jujuy.  Ofreciéndote múltiples paisajes y experiencias enriquecedoras
+            NUESTRO PAQUETE INCLUYE:
+            BUS MIX DESDE CORDOBA
+            ALOJAMIENTO
+            MEDIA PENSIÓN
+            COORDINACIÓN PERMANENTE
+            PODRÁS CONOCER:
+            CITY TOUR POR SALTA + TELEFERICO
+            JUJUY FULL DAY (HUMAHUACA, MAIMARÁ, PURMAMARCA)
+            ¡Prepará tu valija y sumate a este viaje maravilloso!
+            CONSULTÁ PROXIMAS SALIDAS Y RESERVÁ AHORA.
+            `;
             break;
         default:
             mensaje = 'Información no disponible en este momento.';
@@ -122,28 +237,3 @@ document.getElementById('salta').addEventListener('click', function() {
 ///////////////////buttons/////////////////////////
 
 
-/* logica modal start */
- // Obtener elementos
-const modal = document.getElementById("modal");
-const link = document.getElementById("formas-de-pago-link");
-const closeBtn = document.getElementsByClassName("close")[0];
-
-// Mostrar el modal al hacer clic en el enlace
-link.onclick = function(event) {
-    event.preventDefault();
-    modal.style.display = "block";
-}
-
-// Cerrar el modal al hacer clic en la 'X'
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Cerrar el modal al hacer clic fuera del contenido del modal
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
- /* logica modal ends */
